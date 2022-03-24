@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <section class="section job-section">
+        <% data.forEach(item=>{ %>
+            <div class="job-div">
+                <p class="job-title">Job Title</p>
+                <p class="short-name"><a href="/jobs/<%= item.id %>"><%= item.short_name %></a></p>
+            </div>
+        <% }) %> 
+    </section>
+</main>
+
+<%- include('../partials/footer') %> 
